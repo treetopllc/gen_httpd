@@ -11,10 +11,11 @@
 -define(HTTPS_RESPONSE, "HTTPS response string").
 
 %%% eunit tests
-https_test_() ->
-	{setup, fun listen_https/0, fun stop_https/1, {with, [
-				fun simple_request/1
-			]}}.
+%https_test_() ->
+%	{setup, fun listen_https/0, fun stop_https/1, {with, [
+%				fun simple_request/1
+%			]}}.
+-export([listen_https/0, stop_https/1, simple_request/1]).
 
 %%% test help functions
 listen_https() ->
