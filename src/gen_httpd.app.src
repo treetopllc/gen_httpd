@@ -32,8 +32,8 @@
 %%% ----------------------------------------------------------------------------
 {application, gen_httpd,  [
 	{description, "Generic HTTP daemon behaviour."},
-	{vsn, "%VSN%"}, 
-	{modules, [%MODULES%]},
+	{vsn, "0.9.99"},
+	{modules, [gen_httpd, ghtp_conn, ghtp_request, ghtp_utils]},
 	{registered, []},
 	{applications, [kernel, stdlib, gen_tcpd]},
 	{env, []}
